@@ -1,0 +1,26 @@
+// C program to illustrate the concept of
+// returning pointer from a function
+#include <stdio.h>
+
+// Function returning pointer
+int* fun()
+{
+	int A = 10;
+	return (&A);
+}
+
+// Driver Code
+int main()
+{
+	// Declare a pointer
+	int* p;
+
+	// Function call
+	p = fun();
+
+
+	printf("%d\n", *p);
+		printf("%p\n", p);
+	return 0;
+}
+
